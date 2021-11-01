@@ -35,7 +35,7 @@ crif_report_extract_config = {
         "report":
             {
                 "pdf_file_path": "/Users/as/IdeaProjects/crif_pdf_parser/Anand Srinivasan_CCR210901CR303006928.pdf",
-                "pdf_file_pwd": "anan1889",
+                "pdf_file_pwd": "<first 4 letters of name +  last 4 digits mobile>",
                 "first_page": {
                     'extract_inquiry_input_info': True,
                     'extract_crif_highmark_score': True,
