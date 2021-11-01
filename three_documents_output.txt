@@ -1,0 +1,65 @@
+/Users/as/IdeaProjects/pydscodes/venv/bin/python /Users/as/IdeaProjects/crif_pdf_parser/file_ingest.py
+Page Number:  1
+Table:  1
+[['Item 1', 'Item 2'], ['AAA', 'AAA'], ['BBB', 'BBB']]
+Table:  2
+[['Item 3', 'Item 4'], ['AAA', 'AAA'], ['BBB', 'BBB']]
+############### End of Output for Document ############
+
+Page Number:  1
+Table:  1
+[['Item 1', 'Item 2'], ['AAA', 'AAA'], ['BBB', 'BBB']]
+Table:  2
+[['Item 3', 'Item 4'], ['AAA', 'AAA'], ['BBB', 'BBB']]
+############### End of Output for Document ############
+
+Page Number:  1
+Table:  1
+[['CONSUMER CREDIT REPORT CHM Ref #:\xa0 CCR210901CR303006928\n\xa0 Date of Request:\xa0 01-09-2021\nDate of Issue:\xa0 01-09-2021\nFor ANAND SRINIVASAN'], ['']]
+Table:  2
+[['Inquiry Input Information'], ['Name: ANAND SRINIVASAN DOB/Age: Gender:\nFather: Spouse: Mother:\nPhone Numbers: 7760611889 Email ID(s):\xa0 anand.srini85@gmail.com ID(s):\nCurrent Address:\nOther Address:'], ['CRIF HIGHMARK SCORE (S):'], ['NOTE: A-D: Very Low Risk ; E-G: Low Risk ; H-I: Medium Risk ; J-K: High Risk ; L-M: Very High Risk'], ['. \n\xa0616\nSCORE NAME Score Range DESCRIPTION\nPERFORM CONSUMER 2.0 \xa0\xa0300-900 \xa0 \xa0H  -Medium Risk\n\xa0\xa0\xa0\xa0\xa0\xa0Score \nScore Calculation Key Elements'], ['Personal Information - Variations'], ["Tip: These are applicant's personal information variations as contributed by various financial institutions ."], ['Name Variations Reported On DOB Variations Reported On\nANAND SRINIVASAN 31-07-2021 11-06-1985 31-07-2021\nSRINIVASAN ANAND 31-07-2021 11-06-1985 30-11-2020\nSRINIVASAN ANAND 30-06-2021 11-06-1985 31-12-2017\nANAND SRINIVASAN 30-11-2020\nPhone Variations Reported On\nANAND SRINIVAS 31-12-2017\nS SRINIVASAN N ANAND 31-07-2014 7760611889 31-07-2021\n24936639 31-07-2021\nAddress Variations Reported On 25200916 31-07-2021\n415 ARJUN AURA 5TH CRS BILEKAHALLI MN RD BILEKAHALLI VIJAYA BANK LYT 917760611889 31-07-2021\n31-07-2021\nBENGALURU 560076 AP 7760611889 30-06-2021\nFLAT NO 415 3RD ARJUN AURA APTS NEXT TO VIJAYA ENCLAVE 97/4 24936639 31-07-2014\n31-07-2021\nKODICHIKANA BILEKAHALLI BANGALORE 560076 KA 9600067218 31-12-2013\n#415 ARJUN AURA 5TH CROSS BILEKAHALLI MAIN ROAD VIJ AYA BANK LAYOUT 31-07-2021 0 31-08-2012\nBILEKAHALLI BANNERGHATTA RO BANGALORE 560076 KA\n0 31-07-2012\nSCIENAPTIC SYSTEMS PVT LTD 753 22ND CROS S 20TH MAIN 2ND SECTOR HSR\n30-06-2021\nLAYOUT 560102 KA ID Variations Reported On\n415, ARJUN AURA APARTMENTS, 3 FLR, BILEKAH ALLI MAIN, BILEKAHALLI, 560076 30-06-2021 AWAPA9599G [PAN] 31-07-2021\nKA\nM7805359 [Passport] 31-07-2021\n415 ARJUN AURA APARTMENTS BILEKAHALLI MAIN ROAD VIJAYA BANK LAYOUT\nBENGALURU 560076 KA 30-06-2021 AWAPA9599G [PAN] 30-11-2020\n415 ARJUN AURA APARTMENTS BILEKAHALLI BANGALORE BANGALORE 560076 AWAPA9599G [PAN] 31-12-2017\n31-03-2021\n560076 KA\n5E SARAVANA APARTMENTS 14/241 ST MARYS ROAD MANDAVELI CHENNAI\n31-12-2020\n600028 TN\n415, ARJUN AURA APARTMENTS, 3 FLR, BILEKAH ALLI MAIN, BILEKAHALLI, 560076\n31-03-2020\nKA\nNO 302 RAJAN HERITAGE 5TH CROSS STREET RM NAGAR MAIN ROAD\n31-03-2015\nDODDABANASWADI BANGALORE 560043 AP\nFLAT NO 5E, SARAVANA APTS NEW NO 14, OLD NO 241, ST MARYS CHENNAI\n31-07-2014\n600028 TN\nNO 63 1ST MAIN 1ST CROSS VYSYA BANK COLONY B T M 2ND STAGE BANGALORE\n31-03-2013\n560076 AP\nMESHLABS SOFTWARE PVT LTD GLOBAL INCUBATION SERVICES 3RD FLR CA SITE 1\n31-12-2011\nHAL 3 STAGE BANGALORE 560017 AP\nFLAT NO 5E, SARAVANA APTS NEW NO 14, OLD NO 241, ST MARYS ROAD,\n30-09-2011\nMANDAVELLI, CHENNAI-28 CHENNAI 600028 99\nEmail ID Variations Reported On\nanand.srini85@gmail.com 31-07-2021\nanand.srini85@gmail.com 30-11-2020\nanand.srini85@gmail.com 31-12-2017'], [''], ['Tip: All amounts are in INR.'], ['Account Summary'], ['Tip: Current Balance & Disbursed Amount is considered ONLY for ACTIVE accounts.'], [''], ['Number of Account(s) Active Account(s) Overdue Account(s) Current Balance Amt Disbd/ High Credit\n6 5 1 49,08,643 55,43,178\nInquiries in last 24 Months:\xa0\xa0  1 New Account(s) in last 6 Months:\xa0\xa0  1 New Delinquent Account(s) in last 6 Months:\xa0\xa0\xa0  1'], [''], ['Account Information'], [''], ['1 Account Type: \xa0 PERSONAL LOAN Credit Grantor: \xa0 HERO FINCORP LIMITED Account #:\xa0 Info. as of: \xa0 31-07-2021\nhyd0pl00100006612037'], ['Disclaimer: This document is prepared based on the data submitted by member institutions of CRIF High Mark Credit Information Services Private Limited (CRIF High Mark). No alterations are\nmade to the data submitted by member institutions and the same is up to date as well as accurate to the best of its knowledge. By using data contained in this document, the user\nacknowledges that CRIF High Mark is not responsible for errors/omissions resulting from submission of erroneous data from Members to CRIF High Mark. This document may not']]
+Table:  3
+[['Name Variations', 'Reported On'], ['ANAND SRINIVASAN 31-07-2021', None], ['SRINIVASAN ANAND 31-07-2021', None], ['SRINIVASAN ANAND 30-06-2021', None], ['ANAND SRINIVASAN 30-11-2020', None], ['ANAND SRINIVAS 31-12-2017', None], ['S SRINIVASAN N ANAND 31-07-2014', None]]
+Table:  4
+[['DOB Variations', 'Reported On'], ['11-06-1985 31-07-2021', None], ['11-06-1985 30-11-2020', None], ['11-06-1985 31-12-2017', None]]
+Table:  5
+[['Phone Variations', 'Reported On'], ['7760611889 31-07-2021', None], ['24936639 31-07-2021', None], ['25200916 31-07-2021', None], ['917760611889 31-07-2021', None], ['7760611889 30-06-2021', None], ['24936639 31-07-2014', None], ['9600067218 31-12-2013', None], ['0 31-08-2012', None], ['0 31-07-2012', None]]
+Table:  6
+[['Address Variations', 'Reported On'], ['415 ARJUN AURA 5TH CRS BILEKAHALLI MN RD BILEKAHALLI VIJAYA BANK LYT\n31-07-2021\nBENGALURU 560076 AP', None], ['FLAT NO 415 3RD ARJUN AURA APTS NEXT TO VIJAYA ENCLAVE 97/4\n31-07-2021\nKODICHIKANA BILEKAHALLI BANGALORE 560076 KA', None], ['#415 ARJUN AURA 5TH CROSS BILEKAHALLI MAIN ROAD VIJ AYA BANK LAYOUT\n31-07-2021\nBILEKAHALLI BANNERGHATTA RO BANGALORE 560076 KA', None], ['SCIENAPTIC SYSTEMS PVT LTD 753 22ND CROS S 20TH MAIN 2ND SECTOR HSR\n30-06-2021\nLAYOUT 560102 KA', None], ['415, ARJUN AURA APARTMENTS, 3 FLR, BILEKAH ALLI MAIN, BILEKAHALLI, 560076\n30-06-2021\nKA', None], ['415 ARJUN AURA APARTMENTS BILEKAHALLI MAIN ROAD VIJAYA BANK LAYOUT\n30-06-2021\nBENGALURU 560076 KA', None], ['415 ARJUN AURA APARTMENTS BILEKAHALLI BANGALORE BANGALORE 560076\n31-03-2021\n560076 KA', None], ['5E SARAVANA APARTMENTS 14/241 ST MARYS ROAD MANDAVELI CHENNAI\n31-12-2020\n600028 TN', None], ['415, ARJUN AURA APARTMENTS, 3 FLR, BILEKAH ALLI MAIN, BILEKAHALLI, 560076\n31-03-2020\nKA', None], ['NO 302 RAJAN HERITAGE 5TH CROSS STREET RM NAGAR MAIN ROAD\n31-03-2015\nDODDABANASWADI BANGALORE 560043 AP', None], ['FLAT NO 5E, SARAVANA APTS NEW NO 14, OLD NO 241, ST MARYS CHENNAI\n31-07-2014\n600028 TN', None], ['NO 63 1ST MAIN 1ST CROSS VYSYA BANK COLONY B T M 2ND STAGE BANGALORE\n31-03-2013\n560076 AP', None], ['MESHLABS SOFTWARE PVT LTD GLOBAL INCUBATION SERVICES 3RD FLR CA SITE 1\n31-12-2011\nHAL 3 STAGE BANGALORE 560017 AP', None], ['FLAT NO 5E, SARAVANA APTS NEW NO 14, OLD NO 241, ST MARYS ROAD,\n30-09-2011\nMANDAVELLI, CHENNAI-28 CHENNAI 600028 99', None]]
+Table:  7
+[['ID Variations', 'Reported On'], ['AWAPA9599G [PAN] 31-07-2021', None], ['M7805359 [Passport] 31-07-2021', None], ['AWAPA9599G [PAN] 30-11-2020', None], ['AWAPA9599G [PAN] 31-12-2017', None]]
+Table:  8
+[['Email ID Variations', 'Reported On'], ['anand.srini85@gmail.com 31-07-2021', None], ['anand.srini85@gmail.com 30-11-2020', None], ['anand.srini85@gmail.com 31-12-2017', None]]
+Table:  9
+[['Active Account(s)', 'Overdue Account(s)', 'Current Balance', 'Amt Disbd/ High Credit']]
+Table:  10
+[['Inquiries in last 24 Months:\xa0\xa0  1', 'New Account(s) in last 6 Months:\xa0\xa0  1', 'New Delinquent Account(s) in last 6 Months:\xa0\xa0\xa0  1']]
+Page Number:  2
+Table:  1
+[['CONSUMER CREDIT REPORT CHM Ref #:\xa0 CCR210901CR303006928\n\xa0 Date of Request:\xa0 01-09-2021\nDate of Issue:\xa0 01-09-2021\nFor ANAND SRINIVASAN\n\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0A \xa0\xa0\xa0\xa0OCrwendeitr sLhimipi:t: INDIVIDUAL DLaissbt uPrasyemd eDnatt De:ate: 3019--0037--22002211 DCuisrbredn At mBat/laHnicgeh: Credit: 1,0804,,080200\nC\nT \xa0\xa0Cash Limit: Closed Date: Last Paid Amt: 21,956\nIVE \xa0\xa0InstlAmt/Freq: 5,489/Monthly Tenure(month): Overdue Amt: 0\n\xa0\xa0Status: No Suit filed Principal Writeoff Amt\n\xa0\xa0Settlement Amt: Total Writeoff Amt:\nPayment History/Asset Classification:\nJanuary February March April May June July August September October November December\n2021 - - 000/STD 000/STD 000/STD 000/STD 000/STD - - - - -', None], ['2', 'Account Type: \xa0 OTHER Credit Grantor: \xa0 ADITYA BIRLA FINANCE LIMITED Account #:\xa0 Info. as of: \xa0 30-06-2021\nlxw-m06419-200230412'], ['A\nC\nT\nIV\nE', 'Ownership: INDIVIDUAL Disbursed Date: 08-02-2020 Disbd Amt/High Credit: 50,000\n\xa0\xa0Credit Limit: Last Payment Date: Current Balance: 0\n\xa0\xa0Cash Limit: Closed Date: Last Paid Amt:\n\xa0\xa0InstlAmt/Freq: 0 Tenure(month): Overdue Amt: 0'], ['', None]]
+Table:  2
+[['CONSUMER CREDIT REPORT CHM Ref #:\xa0 CCR210901CR303006928\n\xa0 Date of Request:\xa0 01-09-2021\nDate of Issue:\xa0 01-09-2021\nFor ANAND SRINIVASAN'], ['']]
+Table:  3
+[['A\nC\nT\nIV\nE'], ['']]
+Table:  4
+[['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], ['2021', '-', '-', '000/STD', '000/STD', '000/STD', '000/STD', '000/STD', '-', '-', '-', '-', '-']]
+Table:  5
+[['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], ['2021', '000/STD', '000/STD', '000/STD', '000/STD', '000/STD', '000/STD', '-', '-', '-', '-', '-', '-'], ['2020', '-', '000/STD', '000/STD', '000/STD', '000/STD', 'XXX/XXX', '000/STD', '000/STD', '000/STD', '000/STD', '000/STD', '000/STD']]
+Table:  6
+[['3', 'Account Type: \xa0 CREDIT CARD Credit Grantor: \xa0 ICICI BANK LTD Account #:\xa0 Info. as of: \xa0 08-06-2021\n0000000013570481'], ['A\nC\nT\nIV\nE', None], ['', None]]
+Table:  7
+[['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], ['2021', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '-', '-', '-', '-', '-', '-'], ['2020', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX'], ['2019', '-', '-', '-', '-', 'XXX/XXX', 'XXX/XXX', '000/XXX', 'XXX/XXX', 'XXX/XXX', 'XXX/XXX', '000/XXX', '000/XXX']]
+Table:  8
+[['4', 'Account Type: \xa0 HOUSING LOAN Credit Grantor: \xa0 BANK OF MAHARASHTRA Account #:\xa0  60245286095 Info. as of: \xa0 31-07-2021'], ['A\nC\nT\nIV\nE', None], ['', None]]
+Table:  9
+[['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], ['2021', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', '-', '-', '-', '-', '-'], ['2020', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD'], ['2019', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/XXX', 'XXX/XXX', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD'], ['2018', '-', '-', '-', '-', '-', '-', '-', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD', 'XXX/STD']]
+Table:  10
+[['Security Type', 'Type of Charge', 'Security Value', 'Date Of Value'], ['No Collateral', '', '0', '']]
+Table:  11
+[['5', 'Account Type: \xa0 CREDIT CARD Credit Grantor: \xa0 HDFC BANK LTD Account #:\xa0 Info. as of: \xa0 31-07-2021\n0004305700009435941'], ['A\nC\nT\nIV\nE', None], ['', None]]
+Table:  12
+[['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], ['2021', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '005/XXX', '006/XXX', '-', '-', '-', '-', '-'], ['2020', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX', '000/XXX'], ['2019', '000/XXX', '000/XXX', 'XXX/XXX', 'XXX/XXX', '000/XXX', '000/XXX', '000/XXX', 'XXX/XXX', 'XXX/XXX', 'XXX/XXX', 'XXX/XXX', '000/XXX'], ['2018', '-', '-', '-', '-', '-', '-', '-', '000/XXX', '005/XXX', '000/XXX', '000/XXX', '000/XXX']]
+############### End of Output for Document ############
+
+
+Process finished with exit code 0
