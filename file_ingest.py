@@ -9,7 +9,7 @@ class crif_report_extractor:
         self.pdf_file_pwd = self.crif_report_extract_config['report']['pdf_file_pwd']
 
     def extract_obj_first_page(self):
-        with pdfplumber.open(self.pdf_file_path,password='anan1889') as pdf:
+        with pdfplumber.open(self.pdf_file_path,password=self.pdf_file_pwd) as pdf:
             # Extract first page from the PDF document
             first_page = pdf.pages[0]
             # Collates all of the page's character objects into a single string.
