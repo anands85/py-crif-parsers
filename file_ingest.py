@@ -1,4 +1,6 @@
 import pdfplumber
+import pandas as pd
+import numpy as np
 
 class crif_report_extractor:
 
@@ -6,129 +8,64 @@ class crif_report_extractor:
         self.crif_report_extract_config = crif_report_extract_config
         self.pdf_file_path = self.crif_report_extract_config['report']['pdf_file_path']
         self.pdf_file_pwd = self.crif_report_extract_config['report']['pdf_file_pwd']
+        self.excel_file_path = self.crif_report_extract_config['report']['excel_file_path']
+        self.process_success = True
+        self.writer = pd.ExcelWriter(self.excel_file_path, engine='openpyxl')
+
+    def table_array_to_df(self,table_array):
+        self.process_success = True
+        try:
+            table_df = pd.DataFrame(table_array[1:],columns=table_array[0])
+        except Exception as err:
+            print(err)
+            self.process_success = False
+            table_df = pd.DataFrame()
+        return self.process_success,table_df
+
+    def table_df_to_sheet(self,table_df,excel_file,page_number,table_number):
+        self.process_success = True
+        try:
+            table_df.to_excel(self.writer,sheet_name='Sht_'+str(page_number)+"_"+str(table_number))
+            print("Page Number: ", page_number+1, "Table: ", table_number,'written to excel...')
+        except Exception as err:
+            print(err)
+            self.process_success = False
+        return self.process_success
 
     def extract_obj_first_page(self, pages):
-        with pdfplumber.open(self.pdf_file_path,password=self.pdf_file_pwd) as pdf:
-            # Extract first page from the PDF document
-            for page_number in range(pages):
-                print("Page Number: ", page_number+1)
-                first_page = pdf.pages[page_number]
-                # Collates all of the page's character objects into a single string.
-                # Adds spaces where the difference between the x1 of one character and the x0 of the next is greater than x_tolerance.
-                # Adds newline characters where the difference between the doctop of one character and the doctop of the next is greater than y_tolerance.
-                #https://github.com/jsvine/pdfplumber#extracting-tables
-                #brew install freetype imagemagick
-                #brew install gs
-                first_page_tables = first_page.find_tables(table_settings=self.crif_report_extract_config['report']['first_page']['table_settings'])
-                #im.reset().draw_rects(first_page.chars)
-                #first_page_text = first_page.extract_text(x_tolerance = crif_report_extract_config['report']['first_page']['text_settings']['x_tolerance'],
-                #                                          y_tolerance = crif_report_extract_config['report']['first_page']['text_settings']['y_tolerance'])
-                #print(first_page_text)
-                #first_page_tables = first_page.extract_table(table_settings=self.crif_report_extract_config['report']['first_page']['table_settings'])
-                count_tables = 1
-                for table in first_page_tables:
-                    #table_lines = table[0].split(r'\n')
-                    print("Table: ", count_tables)
-                    print(table.extract())
-                    #for line in table_lines:
-                    #    print(line)
-                    count_tables += 1
+        self.process_success = True
+        try:
+            with pdfplumber.open(self.pdf_file_path,password=self.pdf_file_pwd) as pdf:
+                # Extract first page from the PDF document
+                if pages == -1:
+                    pages = len(pdf.pages)
+                print("Number of pages processing...", pages)
+                for page_number in range(pages):
+                    first_page = pdf.pages[page_number]
+                    first_page_tables = first_page.find_tables(table_settings=self.crif_report_extract_config['report']['first_page']['table_settings'])
+                    count_tables = 1
+                    for table in first_page_tables:
+                        print("Page Number: ", page_number+1, "Table: ", count_tables)
+                        self.process_success,table_df = self.table_array_to_df(table.extract())
+                        if self.process_success:
+                            self.process_success = self.table_df_to_sheet(table_df=table_df,
+                                                                          excel_file=self.excel_file_path,
+                                                                          page_number=page_number,
+                                                                          table_number=count_tables)
+                            if self.process_success:
+                                count_tables += 1
+                            else:
+                                raise Exception("Table not saved in Excel")
+                        else:
+                            raise Exception("Tables not saved and Excel not created")
+                self.writer.save()
+                self.writer.close()
+        except Exception as err:
+            print(err)
+            self.process_success = False
+        return self.process_success
 
 
-###################################################
-## JSON config file for extraction from sample table document
-###################################################
-crif_report_extract_config = {
-    "report":
-        {
-            "pdf_file_path": "/Users/as/IdeaProjects/crif_pdf_parser/test-side-by-side-tables.pdf",
-            "pdf_file_pwd": None,
-            "first_page": {
-                'extract_inquiry_input_info': True,
-                'extract_crif_highmark_score': True,
-                'extract_crif_score_name': True,
-                'extract_crif_risk_desc': True,
-                'extract_name_variations_dates': True,
-                'extract_address_variations_dates': True,
-                'extract_name_variations_dates': True,
-                'extract_address_variations_dates': True,
-                'extract_email_variations_dates': True,
-                'extract_dob_variations_dates': True,
-                'extract_phone_variations_dates': True,
-                'extract_id_variations_dates': True,
-                'text_settings': {
-                    'x_tolerance': 3,
-                    'y_tolerance': 3
-                },
-                "table_settings": {
-                    "text_x_tolerance": 3,
-                    "text_y_tolerance": 3,
-                    "intersection_x_tolerance": 3,
-                    "intersection_y_tolerance": 3
-                }
-            }
-        }
-}
-
-###################################################
-## Start Process
-###################################################
-sample_tabular = crif_report_extractor(crif_report_extract_config)
-
-###################################################
-## Start Process
-###################################################
-sample_tabular.extract_obj_first_page(1)
-
-print("############### End of Output for Document ############")
-print("")
-###################################################
-## JSON config file for extraction from CRIF report
-###################################################
-crif_report_extract_config = {
-    "report":
-        {
-            "pdf_file_path": "/Users/as/IdeaProjects/crif_pdf_parser/typical-tables.pdf",
-            "pdf_file_pwd": None,
-            "first_page": {
-                'extract_inquiry_input_info': True,
-                'extract_crif_highmark_score': True,
-                'extract_crif_score_name': True,
-                'extract_crif_risk_desc': True,
-                'extract_name_variations_dates': True,
-                'extract_address_variations_dates': True,
-                'extract_name_variations_dates': True,
-                'extract_address_variations_dates': True,
-                'extract_email_variations_dates': True,
-                'extract_dob_variations_dates': True,
-                'extract_phone_variations_dates': True,
-                'extract_id_variations_dates': True,
-                'text_settings': {
-                    'x_tolerance': 3,
-                    'y_tolerance': 3
-                },
-                "table_settings": {
-                    "text_x_tolerance": 3,
-                    "text_y_tolerance": 3,
-                    "intersection_x_tolerance": 3,
-                    "intersection_y_tolerance": 3
-                }
-            }
-        }
-}
-
-###################################################
-## Start Process
-###################################################
-sample_tabular = crif_report_extractor(crif_report_extract_config)
-
-###################################################
-## Start Process
-###################################################
-sample_tabular.extract_obj_first_page(1)
-
-print("############### End of Output for Document ############")
-print("")
 ###################################################
 ## JSON config file for extraction from CRIF report
 ###################################################
@@ -160,7 +97,8 @@ crif_report_extract_config = {
                         "intersection_x_tolerance": 3,
                         "intersection_y_tolerance": 3
                     }
-                }
+                },
+                "excel_file_path": "/Users/as/IdeaProjects/crif_pdf_parser/CCR210901CR303006928.xlsx"
             }
         }
 
@@ -172,7 +110,7 @@ anand_crif = crif_report_extractor(crif_report_extract_config)
 ###################################################
 ## Start Process
 ###################################################
-anand_crif.extract_obj_first_page(2)
+anand_crif.extract_obj_first_page(-1)
 
 print("############### End of Output for Document ############")
 print("")
