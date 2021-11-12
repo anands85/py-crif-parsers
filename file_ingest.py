@@ -73,7 +73,7 @@ crif_report_extract_config = {
         "report":
             {
                 "pdf_file_path": "/Users/as/IdeaProjects/crif_pdf_parser/CCR210901CR303006928.pdf",
-                "pdf_file_pwd": "anan1889",
+                "pdf_file_pwd": "XXXX1234",
                 "first_page": {
                     'extract_inquiry_input_info': True,
                     'extract_crif_highmark_score': True,
