@@ -105,12 +105,12 @@ crif_report_extract_config = {
 ###################################################
 ## Start Process
 ###################################################
-anand_crif = crif_report_extractor(crif_report_extract_config)
+doc_crif = crif_report_extractor(crif_report_extract_config)
 
 ###################################################
 ## Start Process
 ###################################################
-anand_crif.extract_obj_first_page(-1)
+doc_crif.extract_obj_first_page(-1)
 
 print("############### End of Output for Document ############")
 print("")
